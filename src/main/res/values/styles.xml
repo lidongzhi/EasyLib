@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_main_color</item>
+        <item name="colorPrimaryDark">@color/app_main_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="myProgressBarStyleLarge">
+        <item name="android:indeterminateDrawable">@drawable/pb_bg</item>
+        <item name="android:minWidth">76dip</item>
+        <item name="android:maxWidth">76dip</item>　
+        <item name="android:minHeight">76dip</item>　
+        <item name="android:maxHeight">76dip</item>
+    </style>
+
+    <!--AlderDialog主题-->
+    <style name="alder_dialog"  parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/Base.DialogWindowTitle.AppCompat</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+</resources>

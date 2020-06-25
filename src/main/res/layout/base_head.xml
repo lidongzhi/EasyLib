@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/include_head" />
+
+    <!-- 页面加载时显示的等待动画 -->
+    <RelativeLayout
+        android:id="@+id/rel_base_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/myProgressBarStyleLarge"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDuration="700" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_net_situation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="暂时连不上网络，请稍后再试"
+            android:textColor="@color/font_black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</LinearLayout>

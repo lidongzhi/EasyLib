@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alert_dialog_bg"
+        android:layout_centerInParent="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/img_dialog_station"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/img_ebus_load"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="16dp"
+            android:text="提示"
+            android:textColor="#5393ed"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/line_img"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/title_img"
+            android:background="#5393ed" />
+
+        <TextView
+            android:id="@+id/mesage_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_progressbar"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/dialog_progressbar"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@+id/line_img"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="16dp"
+            android:progressDrawable="@drawable/progressbar"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_progressbar"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mesage_img"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_dialog"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_green_style"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/query_dialog"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_big_blue_style"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

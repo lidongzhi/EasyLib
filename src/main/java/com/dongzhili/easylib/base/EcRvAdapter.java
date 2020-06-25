@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import java.util.List;
 
 public abstract class EcRvAdapter<T> extends RecyclerView.Adapter {
-    private List<T> mData;
+    public List<T> mData;
     private Context context;
     protected final LayoutInflater mLayoutInflater;
 
@@ -19,6 +19,10 @@ public abstract class EcRvAdapter<T> extends RecyclerView.Adapter {
         mLayoutInflater = LayoutInflater.from(context);
     }
 
+    public void setDatas(List<T> items) {
+        this.mData = items;
+        notifyDataSetChanged();
+    }
 
     protected abstract int getLayoutId();
 
